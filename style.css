@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(90deg, rgb(199, 88, 88), rgba(56, 3, 70, 0.979));
+  font-family: sans-serif;
+  font-size: 3rem;
+}
+
+.wrapper {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+
+  overflow: hidden;
+  /* border: red 1px solid; */
+}
+
+.div-container {
+  border: 2px purple solid;
+}
+
+.left-side {
+  /* border: black 2px solid; */
+  margin: 0rem 8rem;
+}
+
+.btn {
+  background-color: rgb(196, 196, 196);
+  position: relative;
+  transform: translate(0%, 50%);
+  font-size: 2rem;
+  padding: 5.7rem 9.2rem;
+  border-radius: 3px;
+  opacity: 0.1;
+  z-index: 2;
+}
+
+.over-image {
+  transform: translate(0%, -50%);
+  z-index: -2;
+  border-radius: 8px;
+}
+.right-side {
+  width: 100%;
+
+  /* border: rgb(255, 255, 255) 2px solid; */
+  text-align: center;
+}
+.dance-container {
+  width: 100%;
+  /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  margin: 0rem;
+  height: 400px;
+}
+.danceDiv {
+  /* border: red 2px solid; */
+  max-height: 300px;
+  min-height: 250px;
+  max-width: 200px;
+  min-width: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 2rem 0.5rem 20rem 0.5rem;
+  display: flex;
+  align-items: center; /* vertical */
+  justify-content: center; /* horizontal */
+}
+
+.danceDiv > img {
+  /* max-width: 250px; */
+  object-fit: fill;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+}
+
+.danceDiv img:hover {
+  transform: scale(0.9);
+}
+
+.btnClear {
+  background: linear-gradient(350deg, #ffffd8a4, #5c8fa3a9);
+  position: relative;
+  transform: translate(0%, 50%);
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  border-radius: 10px;
+  opacity: 1;
+  z-index: 3;
+  transform: translate(55%, -80%);
+}
