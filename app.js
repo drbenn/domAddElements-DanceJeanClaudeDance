@@ -9,7 +9,7 @@ const dance = function () {
   newDanceDiv.classList.add('danceDiv');
   let newImage = document.createElement('img');
   let randomNumber = Math.floor(Math.random() * 10) + 1;
-  let randomImage = `/img/dance${randomNumber}.gif`;
+  let randomImage = `./img/dance${randomNumber}.gif`;
   console.log(randomImage);
   newImage.setAttribute('src', randomImage);
   newDanceDiv.appendChild(newImage);
